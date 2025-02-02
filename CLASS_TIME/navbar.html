@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <style>
+        /* Basic styling for the navbar */
+        nav {
+            background-color: #333; /* Dark background color */
+            color: white; /* Text color */
+            padding: 10px; /* Padding around the navbar */
+            display: flex;
+            justify-content: space-between; /* Align items to left and right */
+            align-items: center; /* Vertically center items */
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none; /* Remove bullet points */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Arrange list items horizontally */
+        }
+
+        nav li {
+            margin-left: 20px; /* Spacing between list items */
+        }
+
+        nav a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underlines from links */
+            padding: 5px 10px; /* Add some padding around link text */
+            border-radius: 5px; /* Optional: Add rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        nav a:hover {
+            background-color: #555; /* Slightly lighter background on hover */
+        }
+
+        /* Optional: Responsive design - show/hide menu on smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none; /* Hide menu on smaller screens */
+                flex-direction: column; /* Stack items vertically */
+                position: absolute;
+                top: 60px; /* Adjust top position if needed */
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                text-align: center; /* Center text within the menu */
+            }
+
+            nav li {
+                margin: 10px 0; /* Adjust margin for stacked items */
+            }
+
+            nav a {
+                display: block; /* Make links fill the width */
+                padding: 10px;
+            }
+
+            /* Class to toggle the menu */
+            .show {
+                display: flex;
+            }
+
+            /* Style for the hamburger icon (you'll need to add this HTML) */
+            .menu-toggle {
+                display: block; /* Show the icon on smaller screens */
+                cursor: pointer;
+                font-size: 1.5em;
+            }
+
+            .menu-toggle span {
+                display: block;
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 5px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">My Website</div>
+        <div class="menu-toggle">  <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript to toggle the menu on smaller screens
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navUl.classList.toggle('show');
+        });
+    </script>
+
+    <h1>Welcome to My Website</h1>
+    <p>Some content here...</p>
+
+</body>
+</html>
