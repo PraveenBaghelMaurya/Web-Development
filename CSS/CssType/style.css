@@ -1,0 +1,14 @@
+.main-div{
+    margin: 50px;
+    background-color: lightcoral;
+}
+#heading{
+    margin-left: 550px;
+    padding-top: 20px;
+}
+.para{
+    text-align: justify;
+    margin: 20px;
+    padding-bottom:50px ;
+    font-family: cursive;
+}

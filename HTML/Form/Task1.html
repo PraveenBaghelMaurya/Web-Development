@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form</title>
+</head>
+<body>
+    <h2>Complete HTML Form</h2>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+        
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="3" maxlength="50">
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6" maxlength="20">
+        <br><br>
+        
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+        <br><br>
+        
+        <!-- Checkbox -->
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interest" value="sports"> <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interest" value="music"> <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interest" value="reading"> <label for="reading">Reading</label>
+        <br><br>
+        
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label>
+        <br><br>
+        
+        <!-- File Upload -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file" required>
+        <br><br>
+        
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        
+        <!-- Color Picker -->
+        <label for="color">Choose a color:</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+        
+        <!-- Range Input -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100">
+        <br><br>
+        
+        <!-- Submit and Reset Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

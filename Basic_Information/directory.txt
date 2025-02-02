@@ -1,0 +1,96 @@
+Here’s a well-structured and visually appealing text format for your Windows command list:  
+
+# **🔥 Essential Windows Command List 🔥**  
+
+## **📌 System Information Commands**  
+🔹 `systeminfo` → View system details  
+🔹 `hostname` → Display computer name  
+🔹 `wmic cpu get name` → Show CPU model  
+🔹 `wmic bios get serialnumber` → Get BIOS serial number  
+🔹 `dxdiag` → Open DirectX Diagnostic Tool  
+
+---
+## **📂 File & Directory Commands**  
+📁 `dir` → List files & folders  
+📁 `cd <folder>` → Change directory  
+📁 `cd ..` → Move up one level  
+📁 `md <folder>` → Create a new folder  
+📁 `mkdir <folder>` → Create a new folder  
+📁 `rd <folder>` → Delete an empty folder  
+📁 `rmdir <folder>` → Delete an empty folder  
+📁 `del <file>` → Delete a file  
+📁 `copy <source> <destination>` → Copy files  
+📁 `move <source> <destination>` → Move files  
+📁 `attrib` → View file attributes  
+📁 `tree` → Show folder structure    
+📁 `echo > filename.txt` → create a file  
+  
+
+---
+
+## **🌐 Networking Commands**  
+🌍 `ipconfig` → Show IP & network details  
+🌍 `ipconfig /all` → Display full network config  
+🌍 `ipconfig /flushdns` → Clear DNS cache  
+🌍 `ping <website/IP>` → Test network connection  
+🌍 `tracert <website/IP>` → Trace packet route  
+🌍 `netstat -an` → View active connections  
+🌍 `nslookup <website>` → Get DNS info  
+🌍 `netsh wlan show profiles` → List saved Wi-Fi networks  
+🌍 `netsh wlan show profile name="<SSID>" key=clear` → Show Wi-Fi password  
+
+---
+
+## **⚙️ Process & Task Management**  
+🛠 `tasklist` → View running processes  
+🛠 `taskkill /IM <processname> /F` → Kill process by name  
+🛠 `taskkill /PID <processID> /F` → Kill process by ID  
+🛠 `wmic process get description,executablepath` → Show running processes with path  
+
+---
+
+## **💾 Disk & Storage Management**  
+💿 `diskpart` → Open Disk Partition tool  
+💿 `chkdsk /f` → Fix file system errors  
+💿 `format <drive>: /fs:NTFS` → Format drive to NTFS  
+💿 `sfc /scannow` → Scan & repair system files  
+💿 `defrag <drive>:` → Defragment drive  
+
+---
+
+## **👤 User & Security Management**  
+🔑 `net user` → List user accounts  
+🔑 `net user <username> /add` → Create a new user  
+🔑 `net user <username> /delete` → Delete a user  
+🔑 `net localgroup administrators <username> /add` → Grant admin rights  
+🔑 `net accounts /maxpwage:90` → Set password expiration  
+🔑 `whoami` → Show logged-in user  
+🔑 `control userpasswords2` → Open User Account settings  
+
+---
+
+## **🛠 Windows Services & Startup**  
+⚡ `services.msc` → Open Services Manager  
+⚡ `msconfig` → Open System Configuration  
+⚡ `wmic service get name,displayname,startmode` → List all services  
+⚡ `sc query` → Show running services  
+
+---
+
+## **🔌 Power & Shutdown Commands**  
+⚠️ `shutdown /s /t 0` → Shutdown immediately  
+⚠️ `shutdown /r /t 0` → Restart immediately  
+⚠️ `shutdown /l` → Log out  
+⚠️ `shutdown /h` → Hibernate  
+
+---
+
+## **🔧 Advanced Windows Management**  
+⚙️ `regedit` → Open Registry Editor  
+⚙️ `gpedit.msc` → Open Group Policy Editor  
+⚙️ `eventvwr` → Open Event Viewer  
+⚙️ `compmgmt.msc` → Open Computer Management  
+
+---
+
+Would you like this in a **PDF or DOC file**? 😊
