@@ -1,0 +1,97 @@
+/* Navbar */
+*{
+   
+}
+nav {
+    height: 52.43px;
+    width: 1141.54px;
+    max-width: 1141.51px;
+    padding: 16.65px 11.89px 11.89px 11.89;
+    gap: 9.51px;
+
+}
+
+.genralFex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 0;
+}
+
+.right-genralFex {
+    margin: 5px;
+}
+
+.parent-navbar {
+    width: 1117.75px;
+    height: 23.89px;
+    gap: 5.95px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15%;
+}
+
+/* .upperCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-cart-part{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.child-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-family: inter;
+        font-weight: 400;
+        font-size: 15.46px;
+        line-height: 22.59px;
+        margin-left: 12px;
+    }
+}
+
+.right-child-nav {
+    width: 175.64px;
+    height: 23.89px;
+    gap: 7.13px;
+    display: flex;
+    flex-direction: row;
+}
+
+.upperCard{
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+.lower-part{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.lower-cart-part{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 600px)
+{
+   .upperCard{
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .lower-part{
+    display: flex;
+    flex-wrap: wrap;
+   }
+}
+/* Main body card */
