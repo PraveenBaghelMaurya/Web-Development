@@ -12,6 +12,8 @@ Event Loop **JavaScript ka core mechanism** hai jo asynchronous tasks ko handle 
 
 ## 🔹 **Event Loop Workflow (Browser & Node.js Dono Me Common Hai!)**  
 
+![alt text](image.png)
+
 1️⃣ **Call Stack (Execution Stack)**  
    - Yahaan synchronous JavaScript code execute hota hai.  
    - Agar kisi function ka execution complete ho jaye, toh wo stack se remove ho jata hai.  
