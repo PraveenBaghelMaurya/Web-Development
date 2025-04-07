@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आयुर्वेद के अनुसार मासिक आहार और स्वास्थ्य मार्गदर्शिका</title>
+    <style>
+        :root {
+            --primary-color: #5d4037;
+            --secondary-color: #8d6e63;
+            --accent-color: #80cbc4;
+            --light-bg: #f5f5f5;
+            --dark-bg: #263238;
+            --text-color: #37474f;
+            --light-text: #eceff1;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin: 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin: 15px 0;
+        }
+        
+        .months-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .month-card {
+            background-color: #fff;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .month-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .month-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--accent-color);
+        }
+        
+        .month-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+            color: var(--dark-bg);
+        }
+        
+        .month-title {
+            flex-grow: 1;
+        }
+        
+        .month-title h3 {
+            margin: 0;
+        }
+        
+        .month-title p {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+        
+        .section {
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            border-radius: var(--border-radius);
+        }
+        
+        @media (max-width: 768px) {
+            .months-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .month-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>आयुर्वेद के अनुसार मासिक आहार और स्वास्थ्य मार्गदर्शिका</h1>
+            <p>हर महीने की ऋतुओं के हिसाब से भोजन, परहेज और बीमारियों की जानकारी</p>
+        </header>
+        
+        <div class="months-container">
+            <!-- January -->
+            <div class="month-card">
+                <div class="month-header">
+                    <div class="month-icon">1</div>
+                    <div class="month-title">
+                        <h3>January (पौष-माघ)</h3>
+                        <p>शिशिर ऋतु (ठंडी ऋतु)</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">मौसम:</div>
+                    <ul>
+                        <li>ठंड भरी होती है, सर्दी का प्रभाव अधिक होता है।</li>
+                        <li>वात दोष बढ़ने का समय है।</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या खाना चाहिए:</div>
+                    <ul>
+                        <li>घी, मक्खन, ड्राई फ्रूट्स (बादाम, अखरोट, मुनक्का)</li>
+                        <li>गुड़ और तिल से बने लड्डू, चिक्की</li>
+                        <li>मूंग दाल, बाजरा, गेहूं</li>
+                        <li>गर्म मसाले जैसे अदरक, काली मिर्च, लौंग</li>
+                        <li>हल्दी वाला दूध, सूप और हर्बल चाय</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या नहीं खाना चाहिए:</div>
+                    <ul>
+                        <li>ठंडा पानी, कोल्ड ड्रिंक्स, आइसक्रीम</li>
+                        <li>बहुत अधिक तेल और मसाले वाले भोजन</li>
+                        <li>बाहर का खाना और प्रोसेस्ड फूड</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">संभावित बीमारियां:</div>
+                    <ul>
+                        <li>जॉइंट पेन (गठिया), त्वचा सूखापन, अस्थमा, साइनस, ठंडी लगना</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">बचाव के उपाय:</div>
+                    <ul>
+                        <li>तुलसी और अदरक की चाय पियें</li>
+                        <li>गर्म कपड़े पहनें, तेल मालिश करें</li>
+                        <li>धूप सेकना लाभदायक है</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- February -->
+            <div class="month-card">
+                <div class="month-header">
+                    <div class="month-icon">2</div>
+                    <div class="month-title">
+                        <h3>February (माघ-फाल्गुन)</h3>
+                        <p>शिशिर से बसंत ऋतु की शुरुआत</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">मौसम:</div>
+                    <ul>
+                        <li>ठंड कम होती है, लेकिन सूखापन ज्यादा होता है</li>
+                        <li>वात और कफ दोष का प्रभाव</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या खाना चाहिए:</div>
+                    <ul>
+                        <li>चुकंदर, गाजर, शलगम जैसे रूट वेजिटेबल्स</li>
+                        <li>गुड़, तिल, नट्स, गर्म दूध</li>
+                        <li>हरड़ और अजवाइन से बना पानी</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या नहीं खाना चाहिए:</div>
+                    <ul>
+                        <li>ठंडे पदार्थ जैसे दही, छाछ, आइसक्रीम</li>
+                        <li>बहुत अधिक मीठा और तेलीय भोजन</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">संभावित बीमारियां:</div>
+                    <ul>
+                        <li>सर्दी, जुकाम, पेट की समस्याएं</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">बचाव के उपाय:</div>
+                    <ul>
+                        <li>नस्य क्रिया करें (नारियल या तिल तेल का नस्य)</li>
+                        <li>गुड़ और अदरक का सेवन करें</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- March -->
+            <div class="month-card">
+                <div class="month-header">
+                    <div class="month-icon">3</div>
+                    <div class="month-title">
+                        <h3>March (फाल्गुन-चैत्र)</h3>
+                        <p>बसंत ऋतु</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">मौसम:</div>
+                    <ul>
+                        <li>थोड़ी गर्मी बढ़ने लगती है, सूखापन कम होता है</li>
+                        <li>कफ दोष का प्रभाव ज्यादा होता है</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या खाना चाहिए:</div>
+                    <ul>
+                        <li>नीम पत्ता, करेला, मेथी, हल्दी</li>
+                        <li>पत्ते वाली सब्जियां जैसे पालक, मेथी, सरसों</li>
+                        <li>मेथी दाना, अजवाइन और जीरा का सेवन</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या नहीं खाना चाहिए:</div>
+                    <ul>
+                        <li>बहुत ज्यादा डेयरी प्रोडक्ट्स</li>
+                        <li>तेलीय और जंक फूड</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">संभावित बीमारियां:</div>
+                    <ul>
+                        <li>एलर्जी, त्वचा रोग, आंख में इंफेक्शन</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">बचाव के उपाय:</div>
+                    <ul>
+                        <li>पंचकर्म थेरेपी का समय</li>
+                        <li>नीम पत्ता और गिलोय का काढ़ा पियें</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- April -->
+            <div class="month-card">
+                <div class="month-header">
+                    <div class="month-icon">4</div>
+                    <div class="month-title">
+                        <h3>April (चैत्र-वैशाख)</h3>
+                        <p>ग्रीष्म ऋतु (गर्मी की शुरुआत)</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">मौसम:</div>
+                    <ul>
+                        <li>मौसम गर्म होने लगता है, शरीर में पित्त दोष बढ़ने लगता है</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या खाना चाहिए:</div>
+                    <ul>
+                        <li>खजूर, नारियल पानी, मौसम्बी, अनार</li>
+                        <li>छाछ, लस्सी, गुलकंद, मिश्री</li>
+                        <li>पुदीना और धनिया का सेवन</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या नहीं खाना चाहिए:</div>
+                    <ul>
+                        <li>बहुत मसालेदार और तेलीय खाना</li>
+                        <li>बहुत गर्म पानी या चाय</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">संभावित बीमारियां:</div>
+                    <ul>
+                        <li>उल्टी, गर्मी का असर, डिहाइड्रेशन, एसिडिटी</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">बचाव के उपाय:</div>
+                    <ul>
+                        <li>रोज शरबत या बेल शरबत पियें</li>
+                        <li>ज्यादा पसीना आने पर नींबू-पानी पियें</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- May -->
+            <div class="month-card">
+                <div class="month-header">
+                    <div class="month-icon">5</div>
+                    <div class="month-title">
+                        <h3>May (वैशाख-ज्येष्ठ)</h3>
+                        <p>तेज़ गर्मी</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">मौसम:</div>
+                    <ul>
+                        <li>गर्मी अपने चरम पर होती है</li>
+                        <li>पित्त दोष अधिक होता है</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या खाना चाहिए:</div>
+                    <ul>
+                        <li>तरबूज, खीरा, ककड़ी</li>
+                        <li>सत्तू, बटरमिल्क, लेमन वाटर</li>
+                        <li>अनार, मौसम्बी, आम पन्ना</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या नहीं खाना चाहिए:</div>
+                    <ul>
+                        <li>गर्म मसाले जैसे लाल मिर्च, तीखा खाना</li>
+                        <li>पकौड़े, फ्राइड और स्पाइसी फूड</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">संभावित बीमारियां:</div>
+                    <ul>
+                        <li>सनस्ट्रोक, डिहाइड्रेशन, झड़ते बाल</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">बचाव के उपाय:</div>
+                    <ul>
+                        <li>एलोवेरा या गिलोय का सेवन</li>
+                        <li>शीतल कपड़े पहनें, धूप से बचें</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- June -->
+            <div class="month-card">
+                <div class="month-header">
+                    <div class="month-icon">6</div>
+                    <div class="month-title">
+                        <h3>June (ज्येष्ठ-आषाढ़)</h3>
+                        <p>ग्रीष्म से वर्षा ऋतु का परिवर्तन</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">मौसम:</div>
+                    <ul>
+                        <li>गर्मी कम होने लगती है, मानसून आने लगता है</li>
+                        <li>वात और पित्त दोष में असंतुलन</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या खाना चाहिए:</div>
+                    <ul>
+                        <li>गर्म पानी या हर्बल टी</li>
+                        <li>छोटी इलायची, दालचीनी, लौंग</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या नहीं खाना चाहिए:</div>
+                    <ul>
+                        <li>बहुत ज्यादा चटपटा खाना</li>
+                        <li>बासी खाना और समोसे, टिक्की</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">संभावित बीमारियां:</div>
+                    <ul>
+                        <li>इंडिजेशन, इंफेक्शन, फंगल इंफेक्शन्स</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">बचाव के उपाय:</div>
+                    <ul>
+                        <li>गिलोय और नीम का काढ़ा पियें</li>
+                        <li>स्वच्छता का ध्यान रखें</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- July -->
+            <div class="month-card">
+                <div class="month-header">
+                    <div class="month-icon">7</div>
+                    <div class="month-title">
+                        <h3>July (आषाढ़-श्रावण)</h3>
+                        <p>वर्षा ऋतु (मानसून का आरंभ)</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">मौसम:</div>
+                    <ul>
+                        <li>बारिश होने लगती है, नमी बढ़ जाती है</li>
+                        <li>वात दोष बढ़ता है, जिसमे जोड़ों का दर्द और गैस की समस्या होती है</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या खाना चाहिए:</div>
+                    <ul>
+                        <li>हल्दी वाला दूध, गिलोय और तुलसी का काढ़ा</li>
+                        <li>लहसुन, हींग और अजवाइन मिला हुआ भोजन</li>
+                        <li>मूंग दाल, बाजरा, घी और हल्दी मिला खाना</li>
+                        <li>गर्म मसाले जैसे दालचीनी, लौंग, काली मिर्च</li>
+                        <li>मक्के और चावल का सेवन करना लाभदायक</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या नहीं खाना चाहिए:</div>
+                    <ul>
+                        <li>दही, पनीर और अन्य डेयरी प्रोडक्ट्स (ये कफ बढ़ाते हैं)</li>
+                        <li>ठंडा और चटपटा खाना, फास्ट फूड</li>
+                        <li>बासी खाना या स्टेल फूड</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">संभावित बीमारियां:</div>
+                    <ul>
+                        <li>इंडिजेशन, फूड पॉइजनिंग, वायरल फीवर</li>
+                        <li>त्वचा रोग जैसे फंगल इंफेक्शन</li>
+                        <li>जोड़ों का दर्द और आर्थराइटिस की समस्या</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">बचाव के उपाय:</div>
+                    <ul>
+                        <li>गिलोय और नीम का काढ़ा पियें</li>
+                        <li>पानी उबाल कर या गर्म करके पियें</li>
+                        <li>पैर सुखाकर रखें, जल्द से जल्द गीले कपड़े बदलें</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- August -->
+            <div class="month-card">
+                <div class="month-header">
+                    <div class="month-icon">8</div>
+                    <div class="month-title">
+                        <h3>August (श्रावण-भाद्रपद)</h3>
+                        <p>वर्षा ऋतु का मध्य</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">मौसम:</div>
+                    <ul>
+                        <li>मौसम नमी से भरा होता है, कफ और वात दोष का प्रभाव</li>
+                        <li>पानी से जुड़ी बीमारियां बढ़ने लगती हैं</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या खाना चाहिए:</div>
+                    <ul>
+                        <li>गुड़, अदरक, काली मिर्च, लौंग का सेवन</li>
+                        <li>बेसन या मूंग दाल के पराठे</li>
+                        <li>हींग, जीरा और अजवाइन डाल कर पकाये हुए खाने</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या नहीं खाना चाहिए:</div>
+                    <ul>
+                        <li>बाहर का खाना, तीखा और तेलीय भोजन</li>
+                        <li>बहुत ठंडा पानी या बर्फ</li>
+                        <li>दही, छाछ और हेवी डेयरी प्रोडक्ट्स</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">संभावित बीमारियां:</div>
+                    <ul>
+                        <li>पेट दुखना, लूज मोशन्स, टाइफाइड, मलेरिया</li>
+                        <li>त्वचा पर दाने और एलर्जी</li>
+                        <li>अस्थमा और साइनस की समस्या बढ़ने लगती है</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">बचाव के उपाय:</div>
+                    <ul>
+                        <li>हर दिन एक चम्मच हल्दी गुनगुने पानी में लें</li>
+                        <li>स्वच्छता का विशेष ध्यान रखें</li>
+                        <li>हर्बल टी का सेवन करें</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- September -->
+            <div class="month-card">
+                <div class="month-header">
+                    <div class="month-icon">9</div>
+                    <div class="month-title">
+                        <h3>September (भाद्रपद-आश्विन)</h3>
+                        <p>शरद ऋतु का आरंभ</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">मौसम:</div>
+                    <ul>
+                        <li>बारिश कम होने लगती है, थोड़ी गर्मी और ह्यूमिडिटी बनी रहती है</li>
+                        <li>पित्त दोष बढ़ने लगता है</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या खाना चाहिए:</div>
+                    <ul>
+                        <li>आंवला, गिलोय, एलोवेरा का जूस</li>
+                        <li>नारियल पानी और मौसम्बी का रस</li>
+                        <li>शीतल भोजन जैसे दूध, मक्खन, मिश्री</li>
+                        <li>गेहूं, चावल, मूंग दाल, दूध से बने पदार्थ</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">क्या नहीं खाना चाहिए:</div>
+                    <ul>
+                        <li>बहुत अधिक स्पाइसी और मसालेदार खाना</li>
+                        <li>जंक फूड और प्रोसेस्ड फूड</li>
+                        <li>अधिक चाय, कॉफी या अल्कोहल</li>
