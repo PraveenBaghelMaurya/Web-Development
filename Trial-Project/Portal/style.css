@@ -1,0 +1,13 @@
+.heading{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: 20%;
+}
+.user{
+    border:1px solid black;
+    width: 25em;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.5495448179271709) 35%, rgba(0,212,255,1) 100%);
+
+}

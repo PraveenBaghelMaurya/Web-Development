@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        .output{
+            height: 500px;
+            width: 600px;
+            border: 1px solid black;
+        }
+        .button{
+            margin-top: 20px;
+        }
+        .Back_btn{
+            padding: 10px 30px;
+            border-radius: 7px;
+        }
+        .Next_btn{
+            margin-left: 300px;
+            padding: 10px 30px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Weather App</h1>
+        <div class="output"></div>
+        <div class="button">
+            <button class="Back_btn" onclick="back()">Back</button>
+            <button class="Next_btn" onclick="next()">Next</button>
+        </div>
+    </center>
+
+    <script>
+        let output=document.querySelector('.output');
+        function memo(fn){
+            let cache={};
+            return function(n){
+               if(cache[n]){
+                return cache[n]
+               }
+               let ans=fn(n);
+               return cache[n]=ans;
+            }
+        }
+
+        async function weather (){
+
+            let API_key='b5075b771bcc5d26384949d9245fc7bd';
+            let city_name=['delhi','pune','mumbai','kolkata','punjab']
+            let response=await fetch('http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid={API_key}')
+            let data=response.text()
+
+            console.log(data)
+        }
+        weather()
+    </script>
+</body>
+</html>

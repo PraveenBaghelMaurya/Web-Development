@@ -1,0 +1,13 @@
+#states{
+    margin: 5px 80px;
+    width: 180px;
+    
+}
+
+.display{
+    border: 1px groove black;
+    height: 500px;
+    width: 90%;
+    margin: 50px 80px;
+    padding: 5px;
+}

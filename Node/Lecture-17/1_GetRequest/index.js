@@ -14,6 +14,13 @@ app.get('/salutation',(req,res)=>{
     console.log(data)
     res.send(`Hey !! Good Morning ${data.name} ${data.last}`)
 })
+app.get('/salutation/:name/:last', (req, res) => {
+    // Client's data comes from req.params
+    const data = req.params;
+    console.log(data);
+    res.send(`Hey!! Good Morning ${data.name} — ${data.last}`);
+});
+
 
 //Params ka matlab hota hai parameters, jo hum URL ke andar bhejte hain kisi specific data ko access karne ke liye.
 
